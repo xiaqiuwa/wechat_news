@@ -1,0 +1,61 @@
+important_keywords:
+  - 重大
+  - 突发
+  - 发布
+  - 政策
+  - 会议
+  - 经济
+  - 金融
+  - 科技
+  - 人工智能
+  - 冲突
+  - 战争
+  - 制裁
+  - 选举
+  - 灾害
+  - 央行
+  - 市场
+  - breakthrough
+  - election
+  - conflict
+  - economy
+  - central bank
+
+# 新闻源失效时程序会跳过并记录警告，不会让整个任务中断。
+# 可继续添加任何 RSS/Atom 地址。
+sources:
+  - name: 中国新闻网国内
+    region: domestic
+    category: 国内
+    weight: 1.20
+    url: https://www.chinanews.com.cn/rss/china.xml
+
+  - name: 中国新闻网社会
+    region: domestic
+    category: 社会
+    weight: 1.05
+    url: https://www.chinanews.com.cn/rss/society.xml
+
+  - name: 中国新闻网财经
+    region: domestic
+    category: 财经
+    weight: 1.10
+    url: https://www.chinanews.com.cn/rss/finance.xml
+
+  - name: 中国新闻网国际
+    region: international
+    category: 国际
+    weight: 1.15
+    url: https://www.chinanews.com.cn/rss/world.xml
+
+  - name: 联合国新闻中文
+    region: international
+    category: 国际
+    weight: 1.10
+    url: https://news.un.org/feed/subscribe/zh/news/all/rss.xml
+
+  - name: NPR世界新闻
+    region: international
+    category: 国际
+    weight: 1.00
+    url: https://feeds.npr.org/1004/rss.xml
