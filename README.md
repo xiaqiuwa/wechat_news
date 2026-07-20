@@ -15,10 +15,10 @@ OPENAI_API_MODE=auto
 
 ```dotenv
 OPENAI_API_KEY=你的中转站密钥
-OPENAI_MODEL=gpt-5.6-terra
+OPENAI_MODEL=gpt-5.5
 ```
 
-如果中转站没有 `gpt-5.6-terra`，可以在安装后运行模型检查，从返回列表中选择实际可用的模型。
+如果中转站没有 `gpt-5.5`，可以在安装后运行模型检查，从返回列表中选择实际可用的模型。
 
 `OPENAI_API_MODE=auto` 会优先调用 Responses API；如果中转站不支持该接口，会自动改用 Chat Completions。也可以手动设置为 `responses` 或 `chat_completions`。
 
@@ -135,6 +135,4 @@ TIMEZONE=Asia/Shanghai
 - 单个新闻源失效时跳过，不发布空文章；
 - 过滤 AI 输出中的脚本、危险链接和不适合公众号的标签；
 - 保存全部原始链接，便于发布前核查。
-
-不要把中转站密钥、微信 `AppSecret` 提交到代码仓库或发送到聊天中。中转站会接触发送给模型的新闻材料及生成内容，请确认服务商可信并了解其数据处理规则。
 
